@@ -1,9 +1,10 @@
 body { 
     margin: 10; /* Remove default body margin */
     padding: 2; /* Remove default body padding */
-    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/home/diggity/Desktop/Imagination/Website/Image_Files/Imagination_Logo.png) no-repeat center fixed; /* change the path if needed once we deploy. Also this controls the fade*/
+    background: url(/home/diggity/Desktop/Imagination/Website/Image_Files/Logo_For_Websitre.png)  no-repeat center center fixed; /* change the path if needed once we deploy. Also this controls the fade*/
     background-size: cover; /* To make it so the image fills the site*/
     font-family: 'Arial', sans-serif /* Change later to something that fits better, also figure out what this changes*/
+    overflow auto; /* or overflow: scroll; */  
 }
 
 header { 
@@ -25,3 +26,60 @@ h1 {
 p {
     font-style: italic /* Change later to something that fits better, also figure out what that changes */
 }
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px; /*Dial these in later*/
+    text-decoration: none;
+}
+
+/* Style the dropdown button*/
+nav .dropdown {
+    display: inline-block;
+    font-size: 40px; /*This changes the titles for the drop down menus*/
+}
+
+nav.dropbtn {
+    padding: 14px 16px;
+}
+
+/*Style the dropdown content */
+nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #F59330; /*Adjust this later*/
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0,2);
+    
+}
+
+nav .dropdown-content a {
+    color: black;
+    padding: 12px 16px; /*Dial these in later*/
+    font-size: 20px; /*Dial these in later*/
+    display: block;
+    text-decoration: none;
+}
+
+/* Change color on hover*/
+nav .dropdown-content a:hover {
+    background-color: #0320AA; /*Dial this in later*/
+}
+
+/* Show the dropdown menu on hover */
+nav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
